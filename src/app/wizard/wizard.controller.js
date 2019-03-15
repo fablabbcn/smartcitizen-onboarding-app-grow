@@ -6,12 +6,12 @@ export function wizardController($scope, $location, $sce, $window, $timeout, Seg
 
     $scope.submittedData.deviceData = {
         device_token: session.device_token,
-        description: 'iSCAPE Citizen Kit',
+        description: 'Grow Smart Citizen Kit',
         exposure: 'outdoor',
-        kit_id: 20
+        kit_id: 17
     };
 
-    $scope.proposed_user_tags_array = ["iSCAPE"];
+    $scope.proposed_user_tags_array = ["Grow"];
 
     $scope.handShakeState = false;
     $scope.handShakeRepeats = 0;

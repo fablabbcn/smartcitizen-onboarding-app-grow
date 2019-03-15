@@ -1,14 +1,14 @@
 {
     "landing": {
-        "h2": "Welcome to the Smart Citizen Kit!",
-        "h4": "Let’s get you set up with a Smart Citizen Kit, and sensing in no time!",
+        "h2": "Welcome to the Grow DIY Kit!",
+        "h4": "Let’s get you set up with a Smart Citizen Grow Kit, and soil sensing in no time!",
         "segueButton": "Let's go",
         "contextButton1": "Skip instructions",
         "contextButton2": ""
     },
     "smart_citizen": {
-        "h2": "Smart Citizen is a movement for civic participation in a modern world",
-        "h4": "Smart Citizen creates open tools for citizens to be better informed about the world around them",
+        "h2": "The GROW Observatory is a European-wide project",
+        "h4": "We are engaging thousands of growers, scientists and others passionate about the land. We will discover together, using simple tools to better manage soil and grow food, while contributing to vital scientific environmental monitoring",
         "segueButton": "continue"
     },
     "smart_citizen_brief": {

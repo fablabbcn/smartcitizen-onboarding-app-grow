@@ -6,7 +6,7 @@
     "url": "landing",
     "controller": "landingController",
     "assets": {
-      "companyLogo": "assets/images/scklogo_white.png"
+      "companyLogo": "assets/images/grow-logo-1.png"
     },
     "contentKeys": [
       "h2",
@@ -24,7 +24,7 @@
         "template": "landing",
         "url": "smart_citizen",
         "assets": {
-          "companyLogo": "assets/images/scklogo_white.png"
+          "companyLogo": "assets/images/grow-logo-1.png"
         },
         "contentKeys": [
           "h2",
@@ -65,160 +65,6 @@
     ]
   },
   {
-    "stateName": "",
-    "controller": "smartcitizenController",
-    "subStates": [{
-        "index": 10,
-        "part": 1,
-        "template": "basic1",
-        "stateName": "whats_in_the_box",
-        "url": "whats_in_the_box",
-        "contentKeys": [
-          "h1",
-          "h4",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 11,
-        "part": 2,
-        "template": "kitbuild1",
-        "stateName": "kitbuild1",
-        "url": "kit_parts",
-        "assets": {
-          "image": "assets/images/atn_parts.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 12,
-        "part": 3,
-        "template": "kitbuild1",
-        "stateName": "kitbuild2",
-        "url": "power_on",
-        "assets": {
-          "image": "assets/images/atn_battery.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 13,
-        "part": 4,
-        "template": "kitbuild1",
-        "stateName": "kitbuild3",
-        "url": "charge_battery",
-        "assets": {
-          "image": "assets/images/atn_usb.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 14,
-        "part": 5,
-        "template": "kitbuild1",
-        "stateName": "kitbuild4",
-        "url": "button_modes",
-        "assets": {
-          "image": "assets/images/atn_button.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-          ]
-        }
-      ]
-    },
-    {
-    "stateName": "",
-    "controller": "smartcitizenController",
-    "subStates": [{
-        "index": 15,
-        "part": 6,
-        "template": "basic1",
-        "stateName": "kitenclosure_start",
-        "url": "kit_enclosure",
-        "contentKeys": [
-          "h1",
-          "h4",
-          "segueButton",
-          "skipButton"
-        ]
-      },
-      {
-        "index": 16,
-        "part": 7,
-        "template": "kitbuild1",
-        "stateName": "kitenclosure1",
-        "url": "kit_enclosure_1",
-        "assets": {
-          "image": "assets/images/atn-enc-1.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 17,
-        "part": 8,
-        "template": "kitbuild1",
-        "stateName": "kitenclosure2",
-        "url": "kit_enclosure_2",
-        "assets": {
-          "image": "assets/images/atn-enc-2.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 18,
-        "part": 9,
-        "template": "kitbuild1",
-        "stateName": "kitenclosure3",
-        "url": "kit_enclosure_3",
-        "assets": {
-          "image": "assets/images/atn-enc-3.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      },
-      {
-        "index": 19,
-        "part": 10,
-        "template": "kitbuild1",
-        "stateName": "kitenclosure4",
-        "url": "kit_enclosure_4",
-        "assets": {
-          "image": "assets/images/atn-enc-4.jpg"
-        },
-        "contentKeys": [
-          "h2",
-          "text",
-          "segueButton"
-        ]
-      }
-    ]
-  }, {
     "index": 20,
     "stateName": "choose_connection",
     "controller": "chooseConnectionController",
