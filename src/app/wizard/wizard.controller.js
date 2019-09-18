@@ -8,7 +8,7 @@ export function wizardController($scope, $location, $sce, $window, $timeout, Seg
         device_token: session.device_token,
         description: 'Grow Smart Citizen Kit',
         exposure: 'outdoor',
-        kit_id: 17
+        kit_id: 27
     };
 
     $scope.proposed_user_tags_array = ['Grow'];
