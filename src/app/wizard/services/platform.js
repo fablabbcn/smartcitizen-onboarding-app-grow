@@ -8,7 +8,7 @@ export function platformNotify(socketFactory) {
 
 platformNotify.$inject = ['socketFactory'];
 
-export function platform($rootScope, SegueService, Restangular, platformNotify) {
+export function platform($rootScope, $cookies, SegueService, Restangular, platformNotify) {
 
     var sessionHeaders = {};
 
@@ -18,6 +18,7 @@ export function platform($rootScope, SegueService, Restangular, platformNotify) 
     }
 
     function setAuth(auth) {
+        $cookies.put('smartcitizen.token', auth.access_token);
         sessionHeaders.Authorization = 'Bearer '  + auth.access_token;
         Restangular.setDefaultHeaders(sessionHeaders);
     }
@@ -29,9 +30,12 @@ export function platform($rootScope, SegueService, Restangular, platformNotify) 
     function updateDevice(data) {
         if (data.user_tags_array) {
             data.user_tags = data.user_tags_array.toString(); // Convert Array to String. Restangular fails?
-            console.log(data)
         }
         return Restangular.one('onboarding/device').patch(data);
+    }
+
+    function getDevice() {
+        return Restangular.one('onboarding/device').get();
     }
 
     function bakeDevice(data) {
@@ -98,6 +102,7 @@ export function platform($rootScope, SegueService, Restangular, platformNotify) 
         setSession: setSession,
         setAuth: setAuth,
         getSession: getSession,
+        getDevice: getDevice,
         updateDevice: updateDevice,
         bakeDevice: bakeDevice,
         checkEmail: checkEmail,
@@ -112,4 +117,4 @@ export function platform($rootScope, SegueService, Restangular, platformNotify) 
 
 }
 
-platform.$inject = ['$rootScope', 'SegueService', 'Restangular', 'platformNotify'];
+platform.$inject = ['$rootScope', '$cookies', 'SegueService', 'Restangular', 'platformNotify'];

@@ -6,7 +6,7 @@
     "url": "landing",
     "controller": "landingController",
     "assets": {
-      "companyLogo": "assets/images/grow-logo-1.png"
+      "companyLogo": "assets/images/GROW/grow-logo-1.png"
     },
     "contentKeys": [
       "h2",
@@ -22,9 +22,9 @@
         "part": 2,
         "stateName": "smart_citizen",
         "template": "landing",
-        "url": "smart_citizen",
+        "url": "grow_project",
         "assets": {
-          "companyLogo": "assets/images/grow-logo-1.png"
+          "companyLogo": "assets/images/GROW/grow-logo-1.png"
         },
         "contentKeys": [
           "h2",
@@ -39,7 +39,7 @@
         "stateName": "smart_citizen_brief",
         "url": "smart_citizen_brief",
         "assets": {
-          "image": "assets/images/sck.png"
+          "image": "assets/images/SCK21/SCK21.png"
         },
         "contentKeys": [
           "h2",
@@ -54,7 +54,7 @@
         "stateName": "smart_citizen_brief2",
         "url": "smart_citizen_brief2",
         "assets": {
-          "image": "assets/images/web.png"
+          "image": "assets/images/SCK21/SCK21_Platform.png"
         },
         "contentKeys": [
           "h2",
@@ -65,6 +65,83 @@
     ]
   },
   {
+    "stateName": "",
+    "controller": "smartcitizenController",
+    "subStates": [{
+        "index": 10,
+        "part": 1,
+        "template": "basic1",
+        "stateName": "whats_in_the_box",
+        "url": "whats_in_the_box",
+        "contentKeys": [
+          "h1",
+          "h4",
+          "segueButton"
+        ]
+      },
+      {
+        "index": 11,
+        "part": 2,
+        "template": "kitbuild1",
+        "stateName": "kitbuild1",
+        "url": "kit_parts",
+        "assets": {
+          "image": "assets/images/GROW/grow_parts.jpg"
+        },
+        "contentKeys": [
+          "h2",
+          "text",
+          "segueButton"
+        ]
+      },
+      {
+        "index": 15,
+        "part": 6,
+        "template": "kitbuild1",
+        "stateName": "kitbuild5",
+        "url": "usb_power",
+        "assets": {
+          "image": "assets/images/SCK21/onboarding/05.jpg"
+        },
+        "contentKeys": [
+          "h2",
+          "text",
+          "segueButton"
+        ]
+      },
+      {
+        "index": 16,
+        "part": 7,
+        "template": "kitbuild1",
+        "stateName": "kitbuild6",
+        "url": "battery",
+        "assets": {
+          "image": "assets/images/SCK21/onboarding/07.jpg"
+        },
+        "contentKeys": [
+          "h2",
+          "text",
+          "segueButton"
+        ]
+      },
+      {
+        "index": 17,
+        "part": 8,
+        "template": "kitbuild1",
+        "stateName": "kitbuild7",
+        "url": "power_on",
+        "assets": {
+          "image": "assets/images/SCK21/onboarding/06.jpg"
+        },
+        "contentKeys": [
+          "h2",
+          "text",
+          "segueButton"
+        ]
+      }
+      ]
+    },
+    {
     "index": 20,
     "stateName": "choose_connection",
     "controller": "chooseConnectionController",
@@ -213,7 +290,6 @@
         "index": 34,
         "part": 4,
         "template": "prompted_entry2",
-        "controller": "accesspointController_handshake",
         "stateName": "ap_wifi",
         "url": "ap_wifi",
         "assets": {
@@ -229,7 +305,6 @@
         "index": 35,
         "part": 5,
         "template": "basic1",
-        "controller": "accesspointController_handshake",
         "stateName": "ap_final",
         "url": "ap_final",
         "contentKeys": [
@@ -274,7 +349,7 @@
         "stateName": "sdcard_inplace",
         "url": "sdcard_inplace",
         "assets": {
-          "image": "assets/images/atn_sd.jpg"
+          "image": "assets/images/SCK21/onboarding/08.jpg"
         },
         "contentKeys": [
           "h2",
@@ -340,7 +415,7 @@
       "index": 41,
       "part": 6,
       "template": "confirm",
-      "controller": "smartcitizenController",
+      "controller": "accesspointController_final",
       "stateName": "confirm_handshake",
       "url": "confirm_handshake",
       "contentKeys": [
@@ -372,7 +447,7 @@
         "part": 2,
         "template": "sensorName",
         "stateName": "sensorName",
-        "url": "sensorName",
+        "url": "sensor_name",
         "contentKeys": [
           "h2",
           "h4",
@@ -423,7 +498,8 @@
           "input1",
           "input1_error",
           "segueButton",
-          "continueButton"
+          "continueButton",
+          "segueButtonError"
         ]
       },
       {
