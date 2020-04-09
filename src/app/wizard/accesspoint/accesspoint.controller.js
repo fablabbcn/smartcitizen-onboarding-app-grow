@@ -56,8 +56,8 @@ export function accesspointController_base($scope, $stateParams, scopePayload, A
     }
 
     function prepSegue() {
-        $timeout.cancel($scope.watchDog);
-        $timeout.cancel($scope.watchHandshake);
+        $timeout.cancel($scope.$parent.watchDog);
+        $timeout.cancel($scope.$parent.watchHandshake);
         $rootScope.$broadcast('forceSegue', { target: 'wizard.confirm_handshake'});
     }
 }
